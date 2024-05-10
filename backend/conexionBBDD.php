@@ -30,3 +30,6 @@ if ($result->num_rows > 0) {
 } else{
     echo " 0 resultados"; //Muestro que no hay resultados
 }
+
+//Cerrar la conexión a la BBDD
+$conn->close();
