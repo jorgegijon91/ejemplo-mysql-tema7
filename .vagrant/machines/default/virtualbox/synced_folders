@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/ALUMNOS_FP/Desktop/primer-ejemplo-mysql-tema7","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/ejemplo_inicial_mysql":{"guestpath":"/ejemplo_inicial_mysql","hostpath":"C:/Users/ALUMNOS_FP/Desktop/primer-ejemplo-mysql-tema7","disabled":false,"__vagrantfile":true}}}
