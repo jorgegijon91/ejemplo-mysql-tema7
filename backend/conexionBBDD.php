@@ -9,6 +9,11 @@ $database= "gestion_empleados";
 //Creación de la conexión
 $conn = new mysqli($servername, $username, $password, $database);
 
+//Considerar acentos y "ñ"
+$conn->set_charset("utf8mb4");
+ 
+var_dump($username);
+
 //Comprobar que haya conexión
 if ($conn->connect_error) {
     die("Conexión fallida:". $conn->connect_error);
@@ -26,7 +31,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $data[] = $row;
 }
-    var_dump($data);
+    echo json_encode($data);
 } else{
     echo " 0 resultados"; //Muestro que no hay resultados
 }
