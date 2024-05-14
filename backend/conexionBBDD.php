@@ -31,7 +31,8 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $data[] = $row;
 }
-    echo json_encode($data);
+   echo json_encode($data); //TRansforma el array en un json
+   //var_dump($data); Array propiamente dicho
 } else{
     echo " 0 resultados"; //Muestro que no hay resultados
 }
